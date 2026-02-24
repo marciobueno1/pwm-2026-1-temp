@@ -1,6 +1,41 @@
 export default function Home() {
   return (
     <div>
+      <iframe
+        name="siteExterno"
+        width="560"
+        height="315"
+        src="http://marciobueno.com"
+      >
+        Seu browser não suporta iframes
+      </iframe>
+      <hr />
+      <a
+        href="https://marciobueno.com/ensino/programacao-orientada-objetos/"
+        target="siteExterno"
+      >
+        Programação Orientada a Objetos
+      </a>
+      <hr />
+      <table border="1">
+        <caption>Resultado 1º Bimestre</caption>
+        <tbody>
+          <tr>
+            <th>Aluno</th>
+            <th colSpan="2">Nota</th>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>10,0</td>
+            <td>10,0</td>
+          </tr>
+          <tr>
+            <td>Maria</td>
+            <td>10,0</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
       <a href="https://www.google.com.br" target="_blank">
         Ir para o Google
       </a>
@@ -13,7 +48,7 @@ export default function Home() {
       ></img>
       <img src="lago.jpg" width={320} height={426}></img>
       <hr />
-      <audio src="horse.mp3" controls autoPlay>
+      <audio src="horse.mp3" controls>
         Seu navegador não suporta a tag audio.
       </audio>
       <video src="movie.mp4" controls>
